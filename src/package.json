@@ -1,0 +1,12 @@
+{
+	"name": "@smackchat/responsive-component",
+	"version": "1.0.0",
+	"description": "Switch from desktop mode to mobile mode (and vice versa) by simply resizing the window.",
+	"license": "MIT",
+  	"repository": "[REPOSITORY HERE]",
+  	"main": "responsive-component.js",
+  	"keywords": [
+    	"smackchat",
+    	"responsive-component",
+  	]
+}
