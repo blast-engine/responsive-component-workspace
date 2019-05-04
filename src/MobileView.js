@@ -1,38 +1,44 @@
 import React from 'react';
 
-
 export const MobileView = () => {
+  const todos = [
+    {
+      id: 1,
+      title: 'do the dishes'
+    },
+    {
+      id: 2,
+      title: 'do homework'
+    },
+    {
+      id: 3,
+      title: 'go for a walk'
+    }, 
+    {
+      id: 4,
+      title: 'do jumping jacks'
+    },
+    {
+      id: 5,
+      title: 'cook dinner'
+    },
+    {
+      id: 6,
+      title: 'sleep early'
+    }
+
+  ]
+
   return (
-    <div>
-      mobile
+    <div className="mobile-list">
+      {
+        todos.map(todo => (
+          <div className="moblie-list-element" key={todo.id} style={{ margin: '15px', width: '40%', height: '50px', display: 'flex', borderWidth: '2px', borderColor: 'black', borderRadius: '10px', borderStyle: 'solid', alignItems: 'center', justifyContent: 'center', float: 'left'}}>
+            {todo.title}
+          </div>
+        ))
+      }
+      
     </div>
   )
 }
-
-
-// export const DesktopView = responsiveComponent(
-//   class DesktopView extends React.Component {
-//     render(){
-//       const { isMobile } = this.props
-//       console.log('my prop ', isMobile)
-//       return (
-//         <div className="App">
-//           <header className="App-header">
-//             <img src={logo} className="App-logo" alt="logo" />
-//             <p>
-//               Edit <code>src/App.js</code> and save to reload.
-//             </p>
-//             <a
-//               className="App-link"
-//               href="https://reactjs.org"
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               Learn React
-//             </a>
-//           </header>
-//         </div>
-//       );
-//     }
-//   }
-// )
