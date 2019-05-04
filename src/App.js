@@ -4,9 +4,6 @@ import { responsiveComponent } from './responsive-component';
 import { DesktopView } from './DesktopView';
 import { MobileView } from './MobileView';
 
-// import { todos } from './todos';
-
-
 const App = responsiveComponent(
   class App extends Component {
     render(){
