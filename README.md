@@ -1,81 +1,33 @@
 # responsive-component
 Switch between mobile mode and desktop mode instantly using the size of the window. 
 
-<!-- ![gif demo](assets/demo.gif) -->
-<img src="assets/demo.gif" alt="demo" width="70%" height="70%">
-
 ## Install
 
 `npm install @smackchat/responsive-component` or `yarn add @smackchat/responsive-component`
 
 ## Usage
 In this example, we create an app that features a mobile version component and a desktop version component. 
-```js
-import React, { Component } from 'react';
-import { DesktopView } from './DesktopView';
-import { MobileView } from './MobileView';
 
-class App extends Component {
-  render(){
-    return (
-      <div className="App">
-        <DesktopView />
-        <MobileView />       
-      </div>
-    );
-  }
-}
-
-export default App;
-```
-
-Here are what the components look like. The desktop version is on the left and the mobile version is on the right.
-
-<!-- <img src="assets/desktop_view.jpg" alt="desktop left"><img src="assets/mobile_view.jpg" alt="mobile right">   -->
-<img src="assets/d and m view.jpg" >
-
-Next, we import responsive-component. Create a variable which passes the `App` class inside `responsiveComponent()`. This is the variable we are exporting instead of the `App` class.
+We create a variable which passes the `App` class inside `responsiveComponent()`. This is the variable we are exporting instead of the `App` class.
 
 ```js
 import React, { Component } from 'react';
-import { DesktopView } from './DesktopView';
-import { MobileView } from './MobileView';
 import { responsiveComponent } from './responsive-component';
+import { DesktopView } from './DesktopView';
+import { MobileView } from './MobileView';
+import './App.css';
 
 const App = responsiveComponent(
   class App extends Component {
     render(){
+      const { isMobile, sizeClass } = this.props;
       return (
-        <div className="App">
-          <DesktopView />
-          <MobileView />  
-        </div>
-      );
-    }
-  }
-);
-
-export default App;
-```
-
-Lastly, we will use the `isMobile` property to render only one of the two components at a given window size. The app renders the mobile version if the current window size is small enough to fit inside a mobile device. Otherwise, the app renders the desktop version.
-
-```js
-import React, { Component } from 'react';
-import { DesktopView } from './DesktopView';
-import { MobileView } from './MobileView';
-import { responsiveComponent } from './responsive-component';
-
-const App = responsiveComponent(
-  class App extends Component {
-    render(){
-      const { isMobile } = this.props;
-      console.log('Is mobile? ', isMobile);
-      return (
-        <div className="App">
+        <div className={"App " + sizeClass}>
           {
             isMobile ? <MobileView /> : <DesktopView />
           }
+          <div className="status">Is mobile: { isMobile + "" }</div>
+          <div className="status">Current screen size: { sizeClass }</div>
         </div>
       );
     }
@@ -84,7 +36,11 @@ const App = responsiveComponent(
 
 export default App;
 ```
+
+The `isMobile` property is used to determine which of the two components will render. The app renders the mobile version if the current window size is small enough to fit inside a mobile device. Otherwise, the app renders the desktop version.
+
+The `sizeClass` property may also be used to determine the current window size. Depending on the window size, it returns one of the following: `screen-big`, `screen-md`, and `screen-small`. In this example, the `background-color` CSS property changes to green when the `sizeClass` is `screen-big`, and orange when it is `screen-small`.
+
 Courtesy of Chrome's dev tools, we can see how the app changes between mobile view and desktop view by shrinking and expanding the dimensions.
 
-<!-- ![gif demo](assets/demo.gif) -->
 <img src="assets/demo.gif" alt="demo" width="70%" height="70%">

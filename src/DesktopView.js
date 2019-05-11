@@ -29,10 +29,10 @@ export const DesktopView = () => {
   ]
 
   return (
-    <div className="desktop-list">
+    <div>
       {
         todos.map(todo => (
-          <div key={todo.id} style={{ margin: '15px', width: '90%', height: '50px', display: 'flex', borderWidth: '2px', borderColor: 'black', borderRadius: '10px', borderStyle: 'solid', alignItems: 'center', justifyContent: 'center'}}>
+          <div key={todo.id} className='desktop-mode'>
             {todo.title}
           </div>
         ))

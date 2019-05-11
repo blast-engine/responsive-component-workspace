@@ -26,14 +26,13 @@ export const MobileView = () => {
       id: 6,
       title: 'sleep early'
     }
-
   ]
 
   return (
-    <div className="mobile-list">
+    <div>
       {
         todos.map(todo => (
-          <div key={todo.id} style={{ margin: '15px', width: '40%', height: '50px', display: 'flex', borderWidth: '2px', borderColor: 'black', borderRadius: '10px', borderStyle: 'solid', alignItems: 'center', justifyContent: 'center', float: 'left'}}>
+          <div key={todo.id} className="mobile-mode">
             {todo.title}
           </div>
         ))
