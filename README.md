@@ -1,7 +1,8 @@
 # responsive-component
 Switch between mobile mode and desktop mode instantly using the size of the window. 
 
-![gif demo](assets/demo.gif)
+<!-- ![gif demo](assets/demo.gif) -->
+<img src="assets/demo.gif" alt="demo" width="40%" height="40%">
 
 ## Install
 
