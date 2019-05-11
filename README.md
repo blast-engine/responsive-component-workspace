@@ -31,7 +31,8 @@ export default App;
 
 Here are what the components look like. The desktop version is on the left and the mobile version is on the right.
 
-<img src="assets/desktop_view.jpg" alt="desktop left"><img src="assets/mobile_view.jpg" alt="mobile right">  
+<!-- <img src="assets/desktop_view.jpg" alt="desktop left"><img src="assets/mobile_view.jpg" alt="mobile right">   -->
+<img src="assets/d_and_m_view.jpg" >
 
 Next, we import responsive-component. Create a variable which passes the `App` class inside `responsiveComponent()`. This is the variable we are exporting instead of the `App` class.
 
@@ -85,4 +86,5 @@ export default App;
 ```
 Courtesy of Chrome's dev tools, we can see how the app changes between mobile view and desktop view by shrinking and expanding the dimensions.
 
-![gif demo](assets/demo.gif)
+<!-- ![gif demo](assets/demo.gif) -->
+<img src="assets/demo.gif" alt="demo" width="70%" height="70%">
