@@ -32,7 +32,7 @@ export default App;
 Here are what the components look like. The desktop version is on the left and the mobile version is on the right.
 
 <!-- <img src="assets/desktop_view.jpg" alt="desktop left"><img src="assets/mobile_view.jpg" alt="mobile right">   -->
-<img src="assets/d_and_m_view.jpg" >
+<img src="assets/d and m view.jpg" >
 
 Next, we import responsive-component. Create a variable which passes the `App` class inside `responsiveComponent()`. This is the variable we are exporting instead of the `App` class.
 
