@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { responsiveComponent } from './responsive-component';
 import { DesktopView } from './DesktopView';
 import { MobileView } from './MobileView';
@@ -7,8 +6,8 @@ import { MobileView } from './MobileView';
 const App = responsiveComponent(
   class App extends Component {
     render(){
-      const { isMobile } = this.props
-      console.log('Is mobile? ', isMobile)
+      const { isMobile } = this.props;
+      console.log('Is mobile? ', isMobile);
       return (
         <div className="App">
           {
@@ -18,6 +17,6 @@ const App = responsiveComponent(
       );
     }
   }
-)
+);
 
-export default App
+export default App;
