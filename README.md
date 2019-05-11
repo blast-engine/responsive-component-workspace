@@ -39,7 +39,23 @@ export default App;
 
 The `isMobile` property is used to determine which of the two components will render. The app renders the mobile version if the current window size is small enough to fit inside a mobile device. Otherwise, the app renders the desktop version.
 
-The `sizeClass` property may also be used to determine the current window size. Depending on the window size, it returns one of the following: `screen-big`, `screen-md`, and `screen-small`. In this example, the `background-color` CSS property changes to green when the `sizeClass` is `screen-big`, and orange when it is `screen-small`.
+The `sizeClass` property may also be used to determine the current window size. Depending on the window size, it returns one of the following: `screen-big`, `screen-md`, and `screen-small`. 
+
+In this example, we use the `sizeClass` property to create specific CSS configurations for big and small window sizes.
+
+```css
+.App {
+  background-color: #ffffff; /*default color*/
+}
+
+.App.screen-big{
+  background-color: #98e263; /*green*/
+}
+
+.App.screen-small{
+  background-color: #ffc759; /*orange*/
+}
+```
 
 Courtesy of Chrome's dev tools, we can see how the app changes between mobile view and desktop view by shrinking and expanding the dimensions.
 

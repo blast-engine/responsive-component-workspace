@@ -3,11 +3,11 @@
 }
 
 .App.screen-big{
-  background-color: #e7ffd6;
+  background-color: #98e263; /*green*/
 }
 
 .App.screen-small{
-  background-color: #fff8ea;
+  background-color: #ffc759; /*orange*/
 }
 
 .mobile-mode{
