@@ -1,43 +1,18 @@
-import React from 'react';
+import React from 'react'
+
+import { todos } from './todos'
 
 export const MobileView = () => {
-  const todos = [
-    {
-      id: 1,
-      title: 'do the dishes'
-    },
-    {
-      id: 2,
-      title: 'do homework'
-    },
-    {
-      id: 3,
-      title: 'go for a walk'
-    }, 
-    {
-      id: 4,
-      title: 'do jumping jacks'
-    },
-    {
-      id: 5,
-      title: 'cook dinner'
-    },
-    {
-      id: 6,
-      title: 'sleep early'
-    }
-  ]
 
   return (
-    <div>
+    <div className='mobile-view'>
       {
         todos.map(todo => (
-          <div key={todo.id} className="mobile-mode">
+          <div key={todo.id} className='todo'>
             {todo.title}
           </div>
         ))
       }
-      
     </div>
   )
 }
