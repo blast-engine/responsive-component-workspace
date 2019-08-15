@@ -1,13 +1,14 @@
 {
   "name": "@blast-engine/responsive-component",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "main": "dist/bundle.js",
   "scripts": {
     "test": "jest",
     "test:watch": "node ./scripts/test.js --watch",
     "test:debug": "node --inspect-brk ./scripts/test.js --watch",
     "build": "webpack",
-    "build:watch": "webpack --watch"
+    "build:watch": "webpack --watch",
+    "npm-publish": "yarn version --patch; yarn publish --access public"
   },
   "jest": {
     "collectCoverageFrom": [
