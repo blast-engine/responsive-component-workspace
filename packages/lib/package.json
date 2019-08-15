@@ -55,6 +55,6 @@
   },
   "dependencies": {
     "@blast-engine/utils": "^0.0.1",
-    "react": "^10.8.6"
+    "react": "^16.8.6"
   }
 }
