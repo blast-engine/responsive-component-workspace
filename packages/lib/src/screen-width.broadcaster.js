@@ -1,4 +1,4 @@
-import { kv, Emitter } from './utils'
+import { kv, Emitter } from '@blast-engine/utils'
 
 export const SCREEN_SIZE = {
   DESKTOP_LG: 'DESKTOP_LG',

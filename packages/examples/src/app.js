@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { responsiveComponent } from './responsive-component';
-import { DesktopView } from './DesktopView';
-import { MobileView } from './MobileView';
-import './App.css';
+import React, { Component } from 'react'
+import { responsiveComponent } from './responsive-component'
+
+import { DesktopView } from './view-desktop'
+import { MobileView } from './view-mobile'
+import './app.css'
 
 const App = responsiveComponent(
   class App extends Component {
