@@ -8,7 +8,8 @@
   "scripts": {
     "s": "yarn select",
     "select": "node scripts/select-script.script.js",
-    "lib:build": "yarn workspace @blast-engine/responsive-component build"
+    "lib:build": "yarn workspace @blast-engine/responsive-component build",
+    "examples:start": "yarn workspace @blast-engine/responsive-component-examples start"
   },
 
   "script-help-files": {

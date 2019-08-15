@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { screenWidth, SCREEN_SIZE } from './screen-width.broadcaster'
 
 export const responsiveComponent = Component => 

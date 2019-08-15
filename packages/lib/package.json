@@ -52,6 +52,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "@blast-engine/utils": "^0.0.1"
+    "@blast-engine/utils": "^0.0.1",
+    "react": "^10.8.6"
   }
 }

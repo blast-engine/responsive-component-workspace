@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { responsiveComponent } from './responsive-component'
 
+import { responsiveComponent } from '@blast-engine/responsive-component'
 import { DesktopView } from './view-desktop'
 import { MobileView } from './view-mobile'
 import './app.css'
