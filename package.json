@@ -9,7 +9,9 @@
     "s": "yarn select",
     "select": "node scripts/select-script.script.js",
     "lib:build": "yarn workspace @blast-engine/responsive-component build",
-    "examples:start": "yarn workspace @blast-engine/responsive-component-examples start"
+    "lib:watch": "yarn workspace @blast-engine/responsive-component build:watch",
+    "lib:npm-publish": "yarn workspace @blast-engine/responsive-component npm-publish",
+    "examples:start": "yarn lib:watch; yarn workspace @blast-engine/responsive-component-examples start"
   },
 
   "script-help-files": {
