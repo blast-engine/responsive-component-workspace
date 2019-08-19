@@ -3,7 +3,7 @@ Switch between mobile mode and desktop mode instantly using the size of the wind
 
 ## Install
 
-`npm install @smackchat/responsive-component` or `yarn add @smackchat/responsive-component`
+`npm install @blast-engine/responsive-component` or `yarn add @blast-engine/responsive-component`
 
 ## Usage
 In this example, we create an app that features a mobile version component and a desktop version component. 
